@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vscode-codicons@0.0.17/dist/codicon.min.css">
+    <link rel="stylesheet" href="./style/style.min.css">
+</head>
+<body>
+    <div class="vs-code-themer">
+        <aside class="themer__menu">
+            <div class="themer__menu__logo">
+                <img src="./images/logo-white.svg" alt="">
+                <span>VS Code Themer</span>
+            </div>
+            <span class="categories">CATEGORIES</span>
+            <ul class="themer__menu__items">
+                <li class="themer__menu__items__item">
+                    <i class="ri-layout-top-line"></i>
+                    <span>Title Bar</span>
+                    <div class="tooltip">
+                        <p>Title Bar Style</p>
+                        <div class="pick-a-color">
+                            <span>Background</span>
+                            <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                        </div>
+                    </div>
+                </li>
+                <li class="themer__menu__items__item">
+                    <i class="ri-layout-left-line"></i>
+                    <span>Activity Bar</span>
+                </li>
+                <li class="themer__menu__items__item">
+                    <i class="ri-layout-right-2-line"></i>
+                    <span>Scrollbar Control</span>
+                </li>
+                <li class="themer__menu__items__item">
+                    <i class="ri-edit-box-line"></i>
+                    <span>Editor</span>
+                </li>
+                <li class="themer__menu__items__item">
+                    <i class="ri-layout-left-2-line"></i>
+                    <span>Side Bar</span>
+                </li>
+                <li class="themer__menu__items__item">
+                    <i class="ri-layout-bottom-line"></i>
+                    <span>Status Bar</span>
+                </li>
+                <li class="themer__menu__items__item">
+                    <i class="ri-terminal-window-line"></i>
+                    <span>Terminal</span>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            <div class="vs-code-themer-live-preview">
+                <div class="container">
+                    <div class="globalcolor">
+                        <div class="globalcolor__left">
+                            Theme Type: <span class="globalcolor__left__dark theme-type">Dark</span> / <span class="globalcolor__left__light">Light</span>
+                        </div>
+                        <div class="globalcolor__right">
+                            <div class="globalcolor__right__primary">
+                                <div class="pick-a-color">
+                                    <span>Primary Color</span>
+                                    <toolcool-color-picker id="primo-color" color="#e76ff1"></toolcool-color-picker>
+                                </div>
+                            </div>
+                            <div class="globalcolor__right__background">
+                                <div class="pick-a-color">
+                                    <span>Background</span>
+                                    <toolcool-color-picker id="defaultBackgroundColor" color=""></toolcool-color-picker>
+                                </div>
+                            </div>
+                            <div class="globalcolor__right__foreground">
+                                <div class="pick-a-color">
+                                    <span>Foreground</span>
+                                    <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vs-code-container">
+                        <section class="titlebar">
+                            <div class="titlebar__left">
+                                <ul>
+                                    <li><img src="./images/logo-white.svg" alt="" srcset=""></li>
+                                    <li>File</li>
+                                    <li>Edit</li>
+                                    <li>Selection</li>
+                                    <li>View</li>
+                                    <li>Go</li>
+                                    <li>Run</li>
+                                    <li>Terminal</li>
+                                    <li>Help</li>
+                                </ul>
+                            </div>
+                            <div class="titlebar__center">
+                                scripts.js <span class="dot"></span> Very Cool Project <span class="dot"></span> Visual Studio Code
+                            </div>
+                            <div class="titlebar__right">
+                                <i class='codicon codicon-chrome-minimize'></i>
+                                <i class='codicon codicon-chrome-maximize'></i>
+                                <i class='codicon codicon-chrome-close'></i>
+                            </div>
+                        </section>
+                        <section class="activitybar">
+                            <div class="activitybar__top">
+                                <div class='codicon codicon-files'></div>
+                                <div class='codicon codicon-search'></div>
+                                <div class='codicon codicon-source-control'></div>
+                                <div class='codicon codicon-debug-alt'></div>
+                                <div class='codicon codicon-extensions'></div>
+                                <div class='codicon codicon-vm-connect'></div>
+                            </div>
+                            <div class="activitybar__bottom">
+                                <div class='codicon codicon-account'></div>
+                                <div class='codicon codicon-gear'></div>
+                            </div>
+                        </section>
+                        <section class="statusbar">
+                            <div class="statusbar__remote">
+                                <div class='codicon codicon-remote'></div>
+                            </div>
+                            <div class="statusbar__items">
+                                <div class="statusbar__items__left">
+                                    <div class='codicon codicon-error'></div>
+                                    <span>0</span>
+                                    <div class='codicon codicon-warning'></div>
+                                    <span>0</span>
+                                </div>
+                                <div class="statusbar__items__right">
+                                    <span>Layout: US</span>
+                                    <div class='codicon codicon-feedback'></div>
+                                    <div class='codicon codicon-bell-dot'></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="sidebar">
+                            <div class="sidebar__top">
+                                <div class="sidebar__explorer">
+                                    <span>explorer</span>
+                                    <div class='codicon codicon-ellipsis'></div>
+                                </div>
+                                <div class="sidebar__top__project">
+                                    <div class="sidebar__dropdown">
+                                        <div class='codicon codicon-chevron-down'></div>
+                                        <span>Very Cool project Workspace</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar__bottom">
+                                <div class="sidebar__outline">
+                                    <div class="sidebar__dropdown">
+                                        <div class='codicon codicon-chevron-right'></div>
+                                            <span>outline</span>
+                                    </div>
+                                </div>
+                                <div class="sidebar__timeline">
+                                    <div class="sidebar__dropdown">
+                                        <div class='codicon codicon-chevron-right'></div>
+                                        <span>timeline</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="editor">
+                            <div class="editor__program">
+                                <ul class="editor__program__nums">
+                                    <li>1 <div class='codicon codicon-folding-expanded'></div></li>
+                                    <li>2 <div class='codicon codicon-blank'></div></li>
+                                    <li>3 <div class='codicon codicon-blank'></div></li>
+                                    <li>4 <div class='codicon codicon-blank'></div></li>
+                                    <li>5 <div class='codicon codicon-blank'></div></li>
+                                    <li>6 <div class='codicon codicon-blank'></div></li>
+                                    <li>7 <div class='codicon codicon-blank'></div></li>
+                                    <li>8 <div class='codicon codicon-blank'></div></li>
+                                    <li>9 <div class='codicon codicon-blank'></div></li>
+                                    <li>10 <div class='codicon codicon-blank'></div></li>
+                                    <li>11 <div class='codicon codicon-blank'></div></li>
+                                    <li>12 <div class='codicon codicon-blank'></div></li>
+                                    <li>13 <div class='codicon codicon-blank'></div></li>
+                                    <li>14 <div class='codicon codicon-blank'></div></li>
+                                    <li>15 <div class='codicon codicon-blank'></div></li>
+                                    <li>16 <div class='codicon codicon-blank'></div></li>
+                                    <li>17 <div class='codicon codicon-blank'></div></li>
+                                    <li>18 <div class='codicon codicon-folding-expanded'></div></li>
+                                </ul>
+                                <ul class="editor__program__code">
+                                    <li>function fizzBuzz (n) {</li>
+                                    <li>    const answer = []</li>
+                                    <li></li>
+                                    <li>for (let i = 1; i <= n; i++) {</li>
+                                    <li>if (i % 3 == 0 && i % 5 == 0)</li>
+                                    <li>answer.push("FizzBuzz")</li>
+                                    <li>else if (i % 3 == 0)</li>
+                                    <li>answer.push("Fizz")</li>
+                                    <li>else if (i % 5 == 0)</li>
+                                    <li>answer.push("Buzz")</li>
+                                    <li>else</li>
+                                    <li>answer.push(i.toString())</li>
+                                    <li>}</li>
+                                    <li></li>
+                                    <li>return answer</li>
+                                    <li>};</li>
+                                    <li></li>
+                                    <li>console.log(fizzBuzz(14))</li>
+                                </ul>
+                            </div>
+                            <div class="editor__minimap"></div>
+                        </section>
+                        <section class="scrollbar">
+                            <div class="scrollbar__bar"></div>
+                            <div class="scrollbar__cursorpoint"></div>
+                        </section>
+                        <section class="terminal">
+                            <div class="terminal__tabs">
+                                <div class="terminal__tabs__left">
+                                    <ul>
+                                        <li>problems</li>
+                                        <li>output</li>
+                                        <li>debug console</li>
+                                        <li>terminal</li>
+                                        <li>comments</li>
+                                    </ul>
+                                </div>
+                                <div class="terminal__tabs__right">
+                                    <div class='codicon codicon-split-horizontal'></div>
+                                    <div class='codicon codicon-trash'></div>
+                                    <div class='codicon codicon-ellipsis'></div>
+                                    <div class='codicon codicon-chevron-up'></div>
+                                    <div class='codicon codicon-chrome-close'></div>
+                                </div>
+                            </div>
+                            <div class="terminal__editor">
+                                <div class='codicon codicon-circle-large'></div>
+                                <span>PS C:\Your\Cool\Project\File\Location></span>
+                                <span class="terminal__editor__cursor"></span>
+                            </div>
+                        </section>
+                        <section class="tabs">
+                            <div class="tabs__tabs">
+                                <div class="tabs__tabs_welcome">
+                                    <div class="tabs__tab">
+                                        <img src="./images/logo-white.svg" alt="">
+                                        <span>Welcome</span>
+                                        <div class='codicon codicon-chrome-close'></div>
+                                    </div>
+                                </div>
+                                <div class="tabs__tabs__js">
+                                    <div class="tabs__tab tabs__tab__active">
+                                        <i class="ri-javascript-fill"></i>
+                                        <span>scripts.js</span>
+                                        <div class='codicon codicon-chrome-close'></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__icons">
+                                <div class='codicon codicon-split-horizontal'></div>
+                                <div class='codicon codicon-ellipsis'></div>
+                            </div>
+                        </section>
+                    </div>
+                    <a href="#" class="create-theme-button">Gimme My Theme!</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toolcool-color-picker/dist/toolcool-color-picker.min.js"></script>
+    <script src="./js/scripts.dev.js"></script>
+</body>
+</html>
