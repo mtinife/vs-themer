@@ -43,6 +43,7 @@ $menu-pad-small: 10px
 
 body
     font-family: SegoeUI
+    font-size: 16px
 
 .categories
     padding: $menu-padding
@@ -83,10 +84,11 @@ body
 .tooltip
     position: absolute
     white-space: nowrap
-    padding: 0 $menu-padding
+    padding: 0 $menu-padding $menu-pad-small
     background: $color-white
     color: $color-dark
     font-size: 16px
+    z-index: 9999
     top: 2px
     left: 145%
     transform: translate(-40% , -20px)
@@ -104,7 +106,7 @@ body
 .pick-a-color
     display: flex
     justify-content: space-between
-    padding: $menu-padding 0
+    padding: $menu-pad-small 0
     gap: 10px
 
 .create-theme-button
@@ -125,24 +127,40 @@ body
     color: $color-blue
     cursor: pointer
 
+.themename
+    input
+        border: 0
+        border-bottom: 2px solid $color-gray
+        outline: 0
+        font-size: 1.3rem
+        color: $color-dark
+        padding: 7px 0
+        background: transparent
+        transition: border-color 0.2s
+
 .vs-code-themer-live-preview
     height: 100% 
     .container  
         width: 70%
         margin: auto
         position: relative
+        z-index: 0
         top: 30%
         transform: translateY(-30%)
         .globalcolor
             display: flex
             justify-content: space-between
             align-items: center
+            font-size: 1em
+            &__left
+                &__dark, &__light
+                    cursor: pointer
             &__right
                 display: flex
                 align-items: center
                 gap: $menu-padding
     .vs-code-container
-        height: calc(100vh - 180px)
+        height: calc(100vh - 240px)
         display: grid
         grid-template-columns: 0.1fr 0.8fr 1.9fr 0.4fr 0.05fr
         grid-template-rows: 0.1fr 0.1fr 1.6fr 1fr 0.1fr
@@ -166,7 +184,7 @@ body
             list-style: none
             display: flex
             align-items: center
-            gap: 0.5em
+            gap: 0.8em
             li
                 img
                     width: 1em
@@ -175,10 +193,12 @@ body
         display: flex
         justify-content: center
     &__right
-        flex-grow: 1
-        display: flex
-        justify-content: right
-        gap: 0.5em
+        ul
+            list-style: none
+            flex-grow: 1
+            display: flex
+            justify-content: right
+            gap: 1.4em
 .activitybar  
     grid-area: activitybar
     display: flex
