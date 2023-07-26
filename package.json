@@ -1,9 +1,0 @@
-{
-  "name": "my-vs-theme",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "dependencies": {
-    "toolcool-color-picker": "^1.0.14"
-  }
-}
