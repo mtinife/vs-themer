@@ -16,11 +16,11 @@
 
 Dark Mode Dashboard
 
-![Dark](./.screenshots/themer-front-page-dark.png.png)
+![Dark](./.screenshots/themer-front-page-dark.png)
 
 Light Mode Dashboard
 
-![Light](./.screenshots/themer-front-page-light.png.png)
+![Light](./.screenshots/themer-front-page-light.png)
 
 ## Future Todo 
 
