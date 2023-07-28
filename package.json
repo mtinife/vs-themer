@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vscode/codicons": "^0.0.33",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "remixicon": "^3.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

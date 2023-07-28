@@ -1,0 +1,42 @@
+:root {
+  --vsc-default-color-blue: #007ACC;
+  --vsc-default-color-green: #16825D;
+  --vsc-default-color-dark-bg-1: #333333;
+  --vsc-default-color-dark-bg-2: #252525;
+  --vsc-default-color-dark-bg-3: #1E1E1E;
+  --vsc-default-color-gray: #707070;
+  --vsc-default-color-lightgray: #BBBBBB;
+  --vsc-default-color-white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, span {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+.aside-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.vsc__themer {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
