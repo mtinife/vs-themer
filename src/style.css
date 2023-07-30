@@ -25,10 +25,16 @@ footer, header, hgroup, menu, nav, section, span {
 
 body {
 	line-height: 1;
+  font-family: Segoe WPC,Segoe UI,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 ol, ul {
 	list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }
 
 .aside-container {
@@ -36,7 +42,96 @@ ol, ul {
   margin: 0 auto;
 }
 
+.aside-header {
+  text-transform: uppercase;
+  color: var(--vsc-default-color-white);
+  padding-bottom: 15px;
+  font-size: 0.825em;
+}
+
+.asideBtnStyle {
+  padding: 20px;
+  display: flex;
+  border-radius: 6px;
+  background-color: var(--vsc-default-color-blue);
+  color: var(--vsc-default-color-white);
+}
+
+.asideBtnStyle:hover {
+  background-color: #0197FD;
+}
+
+.modeActive {
+  color: var(--vsc-default-color-blue) !important;
+  font-weight: bold;
+}
+
 .vsc__themer {
   display: grid;
   grid-template-columns: 200px 1fr;
+}
+
+.vsc__themer__menu {
+  background-color: var(--vsc-default-color-dark-bg-3);
+  height: 100vh;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.vsc__themer__menu__logo {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+  color: var(--vsc-default-color-white);
+}
+
+.vsc__themer__name input {
+  width: 100%;
+  padding: 10px 0;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #2A2A2A;
+  color: var(--vsc-default-color-white);
+}
+
+.vsc__themer__name input:focus-visible {
+  outline: none; 
+  border-bottom: 1px solid var(--vsc-default-color-blue);
+}
+
+.vsc__themer__type__btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.vsc__themer__type__btn span {
+  padding: 15px 20px;
+  border: 1px solid #2A2A2A; 
+  text-transform: capitalize;
+  color: var(--vsc-default-color-white);
+  cursor: pointer;
+}
+.vsc__themer__type__btn span:hover {
+  background-color: var(--vsc-default-color-dark-bg-2);
+}
+
+.vsc__themer__sections ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 10px;
+  color: var(--vsc-default-color-white);
+  text-transform: capitalize;
+}
+
+.vsc__themer__sections ul li:hover {
+  background: var(--vsc-default-color-blue);
+}
+
+.vsc__themer__sections ul li i {
+  font-size: 1.4em;
 }
