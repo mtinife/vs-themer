@@ -135,3 +135,274 @@ button {
 .vsc__themer__sections ul li i {
   font-size: 1.4em;
 }
+
+.vsc__themer__preview {
+  height: calc(100vh - 100px);
+  display: grid;
+  grid-template-columns: 0.1fr 0.8fr 1.9fr 0.4fr 0.05fr;
+  grid-template-rows: 0.1fr 0.1fr 1.6fr 1fr 0.1fr;
+  grid-template-areas: "titlebar titlebar titlebar titlebar titlebar" "activitybar sidebar tabs tabs tabs" "activitybar sidebar editor editor scrollbar" "activitybar sidebar terminal terminal terminal" "statusbar statusbar statusbar statusbar statusbar";
+  width: 80%;
+  margin: 0 auto;
+  align-self: center;
+}
+
+.titlebar {
+  width: 100%;
+  grid-area: titlebar;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  font-size: 0.7em;
+  padding: 10px 20px;
+  background-color: #2B2B2B;
+  color: #737373;
+  border-radius: 10px 10px 0 0;
+}
+.titlebar__left {
+  flex-grow: 1;
+  text-align: left;
+}
+.titlebar__left ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+}
+.titlebar__left ul li img {
+  width: 1em;
+}
+.titlebar__center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+.titlebar__right ul {
+  list-style: none;
+  flex-grow: 1;
+  display: flex;
+  justify-content: right;
+  gap: 1.4em;
+}
+
+.activitybar {
+  grid-area: activitybar;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: #333333;
+  color: #737373;
+  padding: 10px;
+}
+.activitybar__top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+.activitybar__top .codicon {
+  font-size: 1.2em;
+}
+.activitybar__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+.activitybar__bottom .codicon {
+  font-size: 1.2em;
+}
+
+.statusbar {
+  grid-area: statusbar;
+  display: flex;
+}
+.statusbar__remote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  background-color: #16825d;
+  color: #fff;
+  border-bottom-left-radius: 10px;
+}
+.statusbar__items {
+  background-color: #007acc;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 20px 3px 8px;
+  border-bottom-right-radius: 10px;
+  font-size: 0.8em;
+}
+.statusbar__items__left {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.statusbar__items__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #252526;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 5px;
+  color: #cccccc;
+  font-size: 11px;
+}
+.sidebar__explorer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.sidebar__explorer span {
+  text-transform: uppercase;
+}
+.sidebar__dropdown {
+  display: flex;
+  align-items: center;
+  height: 22px;
+  text-transform: uppercase;
+}
+.sidebar__dropdown div {
+  padding: 0 2px;
+}
+.sidebar__outline, .sidebar__timeline {
+  border-top: 1px solid rgba(204, 204, 204, 0.2);
+}
+
+.editor {
+  grid-area: editor;
+}
+.editor__program {
+  height: 100%;
+  background-color: #1E1E1E;
+  display: flex;
+  font-size: 11px;
+}
+.editor__program ul {
+  list-style: none;
+  color: #858585;
+}
+.editor__program ul li {
+  height: 19px;
+}
+.editor__program ul:first-child li {
+  width: 50px;
+  height: 19px;
+  display: flex;
+  justify-content: end;
+  padding: 5px 20px;
+}
+.editor__program ul:last-child li {
+  padding: 5px 0;
+}
+
+.scrollbar {
+  grid-area: scrollbar;
+  background-color: #1E1E1E;
+  border: 1px solid #444444;
+  position: relative;
+}
+.scrollbar__bar {
+  width: 100%;
+  height: 200px;
+  background-color: #444444;
+}
+.scrollbar__cursorpoint {
+  width: 100%;
+  height: 2px;
+  background-color: #b0b0b0;
+  position: absolute;
+  top: 30%;
+}
+
+.terminal {
+  grid-area: terminal;
+  background-color: #1E1E1E;
+  color: rgba(231, 231, 231, 0.6);
+  font-size: 11px;
+}
+.terminal__tabs {
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.terminal__tabs__left ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  text-transform: uppercase;
+}
+.terminal__tabs__right {
+  display: flex;
+  gap: 10px;
+}
+.terminal__editor {
+  padding: 10px 20px;
+  display: flex;
+  gap: 5px;
+}
+.terminal__editor__cursor {
+  padding-left: 4px;
+  width: 4px;
+  border: 1px solid rgba(231, 231, 231, 0.6);
+}
+
+.tabs {
+  grid-area: tabs;
+  display: flex;
+  justify-content: space-between;
+  background-color: #252526;
+}
+.tabs__tabs {
+  height: 35px;
+  display: flex;
+  color: #fff;
+}
+.tabs__tab {
+  padding-left: 10px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  height: 100%;
+  background-color: #2D2D2D;
+}
+.tabs__tab__active {
+  background-color: #1E1E1E;
+}
+.tabs__tab__active .codicon {
+  font-size: 11px;
+  padding: 10px;
+  visibility: visible !important;
+}
+.tabs__tab img {
+  width: 16px;
+}
+.tabs__tab span {
+  font-size: 11px;
+}
+.tabs__tab .codicon {
+  visibility: hidden;
+  font-size: 11px;
+  padding: 10px;
+}
+.tabs__icons {
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+}
