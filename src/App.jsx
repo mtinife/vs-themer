@@ -1,5 +1,5 @@
 import './style.css'
-import logoLight from '../public/assets/logo-white.svg'
+import logoLight from '/assets/logo-white.svg'
 import 'remixicon/fonts/remixicon.css'
 import '../node_modules/@vscode/codicons/dist/codicon.css'
 
@@ -39,7 +39,7 @@ export default function App() {
         <section className="titlebar" id="titlebar">
           <div className="titlebar__left">
               <ul>
-                  <li><img src="./images/logo-white.svg" alt="" srcset="" /></li>
+                  <li><img src={logoLight} alt="" srcset="" /></li>
                   <li>File</li>
                   <li>Edit</li>
                   <li>Selection</li>
@@ -56,29 +56,29 @@ export default function App() {
           <div className="titlebar__right">
               <ul>
                   <li>
-                      <i className='codicon codicon-chrome-minimize'></i>
+                      <i style={{fontSize:11}} className='codicon codicon-chrome-minimize'></i>
                   </li>
                   <li>
-                      <i className='codicon codicon-chrome-maximize'></i>
+                      <i style={{fontSize:11}} className='codicon codicon-chrome-maximize'></i>
                   </li>
                   <li>
-                      <i className='codicon codicon-chrome-close'></i>
+                      <i style={{fontSize:11}} className='codicon codicon-chrome-close'></i>
                   </li>
               </ul>
           </div>
         </section>
         <section className="activitybar">
             <div className="activitybar__top">
-                <div className='codicon codicon-files'></div>
-                <div className='codicon codicon-search'></div>
-                <div className='codicon codicon-source-control'></div>
-                <div className='codicon codicon-debug-alt'></div>
-                <div className='codicon codicon-extensions'></div>
-                <div className='codicon codicon-vm-connect'></div>
+                <div className='activitybar__top__icon__active codicon codicon-files'></div>
+                <div className='activitybar__top__icon codicon codicon-search'></div>
+                <div className='activitybar__top__icon codicon codicon-source-control'></div>
+                <div className='activitybar__top__icon codicon codicon-debug-alt'></div>
+                <div className='activitybar__top__icon codicon codicon-extensions'></div>
+                <div className='activitybar__top__icon codicon codicon-vm-connect'></div>
             </div>
             <div className="activitybar__bottom">
-                <div className='codicon codicon-account'></div>
-                <div className='codicon codicon-gear'></div>
+                <div className='activitybar__top__icon codicon codicon-account'></div>
+                <div className='activitybar__top__icon codicon codicon-gear'></div>
             </div>
         </section>
         <section className="statusbar">
@@ -129,26 +129,11 @@ export default function App() {
         </section>
         <section className="editor">
             <div className="editor__program">
-                <ul className="editor__program__nums">
-                    <li>1 <div className='codicon codicon-folding-expanded'></div></li>
-                    <li>2 <div className='codicon codicon-blank'></div></li>
-                    <li>3 <div className='codicon codicon-blank'></div></li>
-                    <li>4 <div className='codicon codicon-blank'></div></li>
-                    <li>5 <div className='codicon codicon-blank'></div></li>
-                    <li>6 <div className='codicon codicon-blank'></div></li>
-                    <li>7 <div className='codicon codicon-blank'></div></li>
-                    <li>8 <div className='codicon codicon-blank'></div></li>
-                    <li>9 <div className='codicon codicon-blank'></div></li>
-                    <li>10 <div className='codicon codicon-blank'></div></li>
-                    <li>11 <div className='codicon codicon-blank'></div></li>
-                    <li>12 <div className='codicon codicon-blank'></div></li>
-                    <li>13 <div className='codicon codicon-blank'></div></li>
-                    <li>14 <div className='codicon codicon-blank'></div></li>
-                    <li>15 <div className='codicon codicon-blank'></div></li>
-                </ul>
-                <ul className="editor__program__code">
-
-                </ul>
+              <pre>
+                <code className="language-javascript line-height">
+                  
+                </code>
+              </pre> 
             </div>
             <div className="editor__minimap"></div>
         </section>
@@ -176,7 +161,7 @@ export default function App() {
                 </div>
             </div>
             <div className="terminal__editor">
-                <div className='codicon codicon-circle-large'></div>
+                <div style={{fontSize:9}} className='codicon codicon-circle-large'></div>
                 <span>{'PS C:\\Your\\Cool\\Project\\File\\Location'}</span>
                 <span className="terminal__editor__cursor"></span>
             </div>
@@ -185,16 +170,20 @@ export default function App() {
             <div className="tabs__tabs">
                 <div className="tabs__tabs_welcome">
                     <div className="tabs__tab">
-                        <img src="./images/logo-white.svg" alt="" />
-                        <span>Welcome</span>
+                        <div className="tabs__tab__icon">
+                          <img src="../assets/logo-white.svg" alt="" />
+                          <span>Welcome</span>
+                        </div>
                         <div className='codicon codicon-chrome-close'></div>
                     </div>
                 </div>
                 <div className="tabs__tabs__js">
                     <div className="tabs__tab tabs__tab__active">
-                        <i className="ri-javascript-fill"></i>
-                        <span>scripts.js</span>
-                        <div className='codicon codicon-chrome-close'></div>
+                        <div className="tabs__tab__icon">
+                          <i className="devicon-javascript-plain colored"></i>
+                          <span>scripts.js</span>
+                        </div>
+                        <div style={{fontSize:11}} className='codicon codicon-chrome-close'></div>
                     </div>
                 </div>
             </div>
