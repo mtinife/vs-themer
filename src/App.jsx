@@ -24,13 +24,160 @@ export default function App() {
         <div className="vsc__themer__sections">
           <span className="aside-header aside-container">sections</span>
           <ul>
-            <li><i className="ri-layout-top-line"></i><span>title bar</span></li>
-            <li><i className="ri-layout-left-line"></i><span>activity bar</span></li>
-            <li><i className="ri-layout-right-2-line"></i><span>scrollbar control</span></li>
-            <li><i className="ri-edit-box-line"></i><span>editor</span></li>
-            <li><i className="ri-layout-left-2-line"></i><span>side bar</span></li>
-            <li><i className="ri-layout-bottom-line"></i><span>status bar</span></li>
-            <li><i className="ri-terminal-window-fill"></i><span>terminal</span></li>
+            <li className="themer__menu__items__item">
+                <i className="ri-layout-top-line"></i>
+                <span>Title Bar</span>
+                <div className="tooltip">
+                    <p>Title Bar Style</p>
+                    <div className="pick-a-color">
+                        <span>Background</span>
+                        <toolcool-color-picker id="titleBarBackground" color="#2B2B2B"></toolcool-color-picker>
+                    </div>
+                </div>
+            </li>
+            <li className="themer__menu__items__item">
+                <i className="ri-layout-left-line"></i>
+                <span>Activity Bar</span>
+                <div className="tooltip">
+                    <p>Activity Bar Style</p>
+                    <div className="pick-a-color">
+                        <span>Background</span>
+                        <toolcool-color-picker color="#333333"></toolcool-color-picker>
+                    </div>
+                    <div className="pick-a-color">
+                        <span>Foreground</span>
+                        <toolcool-color-picker color="#737373"></toolcool-color-picker>
+                    </div>
+                    <p>Activity Bar Badge Style</p>
+                    <div className="pick-a-color">
+                        <span>Background</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                    <div className="pick-a-color">
+                        <span>Foreground</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                </div>
+            </li>
+            <li className="themer__menu__items__item">
+                <i className="ri-layout-right-2-line"></i>
+                <span>Scrollbar Control</span>
+                <div className="tooltip">
+                    <p>Scroll Bar Control Style</p>
+                    <div className="pick-a-color">
+                        <span>Shadow</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                    <p>Scroll Bar Control Style</p>
+                    <div className="pick-a-color">
+                        <span>Background</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                    <div className="pick-a-color">
+                        <span>Active Background</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                    <div className="pick-a-color">
+                        <span>Hover Background</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                </div>
+            </li>
+            <li className="themer__menu__items__item">
+                <i className="ri-edit-box-line"></i>
+                <span>Editor</span>
+            </li>
+            <li className="themer__menu__items__item">
+                <i className="ri-layout-left-2-line"></i>
+                <span>Side Bar</span>
+                <div className="tooltip">
+                    <p>Side Bar Style</p>
+                    <div className="pick-a-color">
+                        <span>Background</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                    <p>Section Header Style</p>
+                    <div className="pick-a-color">
+                        <span>Background</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                    <div className="pick-a-color">
+                        <span>Foreground</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                </div>
+            </li>
+            <li className="themer__menu__items__item">
+                <i className="ri-layout-bottom-line"></i>
+                <span>Status Bar</span>
+                <div className="tooltip">
+                    <p>Status Bar Style</p>
+                    <div className="pick-a-color">
+                        <span>Background</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                    <div className="pick-a-color">
+                        <span>Foreground</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                    <p>No Folder Style</p>
+                    <div className="pick-a-color">
+                        <span>Background</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                    <div className="pick-a-color">
+                        <span>Foreground</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                </div>
+            </li>
+            <li className="themer__menu__items__item">
+                <i className="ri-terminal-window-line"></i>
+                <span>Panel</span>
+                <div className="tooltip">
+                    <p>Panel Style</p>
+                    <div className="pick-a-color">
+                        <span>Background</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                    <div className="pick-a-color">
+                        <span>Border</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                    <div className="pick-a-color">
+                        <span>Drop Background</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                    <p>Panel Title Style</p>
+                    <div className="pick-a-color">
+                        <span>Active Border</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                    <div className="pick-a-color">
+                        <span>Active Foreground</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                    <div className="pick-a-color">
+                        <span>Inactive Foreground</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                </div>
+            </li>
+            <li className="themer__menu__items__item">
+                <i className="ri-terminal-window-line"></i>
+                <span>Terminal</span>
+                <div className="tooltip">
+                    <p>Terminal Style</p>
+                    <div className="pick-a-color">
+                        <span>Background</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                    <div className="pick-a-color">
+                        <span>Foreground</span>
+                        <toolcool-color-picker color="#e76ff1"></toolcool-color-picker>
+                    </div>
+                </div>
+            </li>
           </ul>
         </div>
         <button className="aside-container asideBtnStyle">Get Theme JSON</button>
@@ -148,7 +295,7 @@ export default function App() {
                         <li>problems</li>
                         <li>output</li>
                         <li>debug console</li>
-                        <li>terminal</li>
+                        <li className="terminal__tabs__left__active">terminal</li>
                         <li>comments</li>
                     </ul>
                 </div>

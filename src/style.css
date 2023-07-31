@@ -86,6 +86,7 @@ button {
   gap: 10px;
   padding: 20px 0;
   color: var(--vsc-default-color-white);
+  border-bottom: 1px solid #2A2A2A;
 }
 
 .vsc__themer__name input {
@@ -126,14 +127,67 @@ button {
   gap: 10px;
   color: var(--vsc-default-color-white);
   text-transform: capitalize;
+  position: relative;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
 }
 
 .vsc__themer__sections ul li:hover {
-  background: var(--vsc-default-color-blue);
+  background-color: var(--vsc-default-color-blue);
+}
+
+.vsc__themer__sections ul li:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -52%);
 }
 
 .vsc__themer__sections ul li i {
   font-size: 1.4em;
+}
+
+.tooltip {
+  position: absolute;
+  white-space: nowrap;
+  padding: 0 20px 10px;
+  background: #fff;
+  color: #1E1E1E;
+  font-size: 16px;
+  z-index: 9999;
+  top: 50%;
+  left: 175%;
+  transform: translate(-40%, -20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  width: 250px;
+}
+.tooltip::before {
+  content: " ";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  bottom: -6px;
+  top: 50%;
+  left: 0%;
+  z-index: -1;
+  transform: translate(-50%) rotate(45deg);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.tooltip p {
+  font-weight: 600;
+  font-size: 1.2em;
+  padding: 20px 0;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.pick-a-color {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  gap: 10px;
 }
 
 .vsc__themer__preview {
@@ -155,7 +209,7 @@ button {
   justify-content: space-between;
   align-items: center;
   font-size: 0.7em;
-  padding: 10px 20px;
+  padding: 10px;
   background-color: #2B2B2B;
   color: #737373;
   border-radius: 10px 10px 0 0;
@@ -336,27 +390,37 @@ button {
   grid-area: terminal;
   background-color: #1E1E1E;
   color: rgba(231, 231, 231, 0.6);
-  font-size: 11px;
+  font-size: 9px;
   border-top: 1px solid #444444;
 }
 .terminal__tabs {
-  height: 22px;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
+  padding: 5px 15px;
 }
 .terminal__tabs__left ul {
   list-style: none;
   display: flex;
-  gap: 20px;
   text-transform: uppercase;
+  gap: 20px;
+}
+.terminal__tabs__left__active {
+  border-bottom: 1px solid var(--vsc-default-color-blue);
+}
+.terminal__tabs__left ul li {
+  padding: 5px 0;
 }
 .terminal__tabs__right {
   display: flex;
   gap: 10px;
+  padding: 5px 0;
+}
+.terminal__tabs__right .codicon {
+  font-size: 9px;
 }
 .terminal__editor {
-  padding: 10px 20px;
+  padding: 5px 15px;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -420,3 +484,5 @@ button {
   gap: 20px;
   color: #fff;
 }
+
+
