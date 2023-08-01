@@ -28,6 +28,7 @@ Light Mode Dashboard
 |----------------------------------------------------------------------|--------------------------------------------------------------------|
 | Color implementation for all components on VS Code  | ![50%](https://progress-bar.dev/50/?title=planned)                 |
 | Color change on user changes | ![10%](https://progress-bar.dev/10/?title=planned)                 |
+| Work text color contrast based on background color | ![10%](https://progress-bar.dev/10/?title=planned)                 |
 | Break up layout elements into react components  | ![10%](https://progress-bar.dev/10/?title=planned)                 |
 
 | JSON output for creating VS Code theme                                                         | ![Planned](https://progress-bar.dev/0/?title=planned&color=b8860b) |
