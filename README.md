@@ -26,8 +26,10 @@ Light Mode Dashboard
 
 | Description                                                          | Progress                                                           |
 |----------------------------------------------------------------------|--------------------------------------------------------------------|
-| Porting HTML, CSS & JS build to ReactJS for better development  | ![30%](https://progress-bar.dev/50/?title=progres)                 |
-| Color implementation for all components on VS COde  | ![30%](https://progress-bar.dev/50/?title=planned)                 |
+| Color implementation for all components on VS Code  | ![50%](https://progress-bar.dev/50/?title=planned)                 |
+| Color change on user changes | ![10%](https://progress-bar.dev/10/?title=planned)                 |
+| Break up layout elements into react components  | ![10%](https://progress-bar.dev/10/?title=planned)                 |
+
 | JSON output for creating VS Code theme                                                         | ![Planned](https://progress-bar.dev/0/?title=planned&color=b8860b) |
 | Step by step guide to create and add VS Code themes                         | ![Planned](https://progress-bar.dev/0/?title=planned&color=b8860b) |
 
@@ -39,4 +41,6 @@ Light Mode Dashboard
 | Logo design                     | ![100%](https://progress-bar.dev/100/?title=done&color=555555) |
 | Application design wireframes | ![100%](https://progress-bar.dev/100/?title=done&color=555555) |
 | VS Code Theme build research | ![100%](https://progress-bar.dev/100/?title=done&color=555555) |
+| VS Code layout cloned | ![100%](https://progress-bar.dev/100/?title=done&color=555555) |
+| Porting HTML, CSS & JS build to ReactJS for better development | ![100%](https://progress-bar.dev/100/?title=done&color=555555) |
 </details>
